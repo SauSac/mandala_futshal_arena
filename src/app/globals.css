@@ -51,3 +51,8 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+.cube{
+transform-style:preserve-3d;
+animation:cubeRotate 2s infinite linear;
+}
