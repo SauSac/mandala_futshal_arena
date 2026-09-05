@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Loading from "@/components/loading";
 
 export default function Home() {
   const btnPrimary =
