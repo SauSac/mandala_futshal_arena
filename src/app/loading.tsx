@@ -1,12 +1,12 @@
 export default function Loading() {
   return (
-    <div className="loading-screen">
-      <div className="cube">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <main className="loading-screen">
+      <div className="cube" aria-label="Loading">
+        <div />
+        <div />
+        <div />
+        <div />
       </div>
-    </div>
+    </main>
   );
 }
