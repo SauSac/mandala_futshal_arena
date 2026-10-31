@@ -64,7 +64,7 @@ export default function Home() {
 
           <div className="grid gap-6 md:grid-cols-3">
 
-            <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-7">
+            <div className="rounded-2xl border border-white/10 bg-white/4 p-7">
               <h3 className="text-xl font-semibold">
                 Find an Arena
               </h3>
@@ -75,7 +75,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-7">
+            <div className="rounded-2xl border border-white/10 bg-white/4 p-7">
               <h3 className="text-xl font-semibold">
                 Book a Slot
               </h3>
@@ -86,7 +86,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-7">
+            <div className="rounded-2xl border border-white/10 bg-white/4 p-7">
               <h3 className="text-xl font-semibold">
                 Compete
               </h3>
@@ -124,7 +124,7 @@ export default function Home() {
 
             <div className="space-y-5">
 
-              <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+              <div className="rounded-2xl border border-white/10 bg-white/4 p-6">
                 <span className="text-sm font-bold text-yellow-400">
                   01
                 </span>
@@ -138,7 +138,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+              <div className="rounded-2xl border border-white/10 bg-white/4 p-6">
                 <span className="text-sm font-bold text-yellow-400">
                   02
                 </span>
@@ -152,7 +152,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+              <div className="rounded-2xl border border-white/10 bg-white/4 p-6">
                 <span className="text-sm font-bold text-yellow-400">
                   03
                 </span>
