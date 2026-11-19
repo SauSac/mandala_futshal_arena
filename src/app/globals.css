@@ -169,3 +169,25 @@ html.js [data-reveal].in { opacity: 1; transform: translate3d(0, 0, 0); }
   .rise { opacity: 1; }
   html.js [data-reveal] { opacity: 1; transform: none; }
 }
+/* ---------- BookIN brand and marketing pages ---------- */
+.football-stage { --ball-size: clamp(15rem, 38vw, 23rem); position: relative; width: var(--ball-size); aspect-ratio: 1; isolation: isolate; }
+.football-svg { position: relative; z-index: 2; display: block; width: 100%; height: 100%; filter: drop-shadow(0 28px 34px rgba(0,0,0,.42)) drop-shadow(0 0 34px rgba(18,133,255,.16)); }
+.football-rotate { transform-origin: 160px 160px; animation: football-spin 18s linear infinite; }
+.football-shadow { position: absolute; z-index: 0; left: 12%; right: 12%; bottom: -7%; height: 11%; border-radius: 50%; background: radial-gradient(ellipse, rgba(0,0,0,.58), transparent 72%); filter: blur(8px); animation: football-shadow 4s ease-in-out infinite; }
+.football-orbit { position: absolute; inset: 12%; border: 1px solid rgba(35,143,255,.2); border-radius: 50%; transform: rotate(-25deg) scaleX(1.22); }
+.football-glow { position: absolute; z-index: -1; inset: 14%; border-radius: 50%; background: #087cff; opacity: .18; filter: blur(50px); }
+@keyframes football-spin { to { transform: rotate(360deg); } }
+@keyframes football-shadow { 50% { transform: scaleX(.82); opacity: .65; } }
+.marketing-page { min-height: 70vh; padding-top: 9rem; }
+.marketing-hero { padding-block: clamp(2rem, 5vw, 4.5rem) clamp(3.5rem, 7vw, 6rem); }
+.marketing-title { max-width: 900px; font-size: clamp(2.8rem, 7vw, 5.8rem); font-weight: 750; letter-spacing: -.065em; line-height: .99; }
+.marketing-title span { color: var(--accent-text); }
+.about-logo-card { position: relative; display: grid; place-items: center; overflow: hidden; min-height: 21rem; padding: 2rem; border-radius: 2rem; }
+.about-logo-halo { position: absolute; width: 65%; aspect-ratio: 1; border-radius: 50%; background: #087cff; opacity: .14; filter: blur(55px); }
+.contact-form label > span { display: block; margin-bottom: .55rem; color: var(--muted); font-size: .72rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.contact-form input, .contact-form textarea { width: 100%; border: 1px solid var(--glass-b); border-radius: .9rem; background: var(--bg-2); color: var(--fg); padding: .9rem 1rem; outline: none; transition: border-color .2s, box-shadow .2s; }
+.contact-form input::placeholder, .contact-form textarea::placeholder { color: var(--muted); opacity: .7; }
+.contact-form input:focus, .contact-form textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--glow); }
+.contact-form textarea { resize: vertical; min-height: 9rem; }
+@media (max-width: 640px) { .marketing-page { padding-top: 7.5rem; } .about-logo-card { min-height: 17rem; } }
+@media (prefers-reduced-motion: reduce) { .football-rotate, .football-shadow { animation: none; } }

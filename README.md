@@ -34,3 +34,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## BookIN authentication
+
+See [AUTHENTICATION_SETUP.md](./AUTHENTICATION_SETUP.md) for Supabase phone OTP, email verification, and profile-trigger setup. The OTP expiry must also be configured in the Supabase dashboard; the page countdown alone cannot enforce server-side expiry.

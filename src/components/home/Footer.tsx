@@ -1,4 +1,5 @@
-import { Facebook, Instagram, Logo, Pin, XIcon, Youtube } from "./Icons";
+import Image from "next/image";
+import { Facebook, Instagram, Pin, XIcon, Youtube } from "./Icons";
 import { NAV } from "./Nav";
 
 const SOCIAL = [
@@ -11,7 +12,7 @@ export default function Footer() {
     <footer id="contact" className="border-t border-[var(--glass-b)] bg-bg2/60">
       <div className="wrap grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr] lg:gap-16">
         <div>
-          <a href="#top" className="inline-flex items-center gap-2.5" aria-label="BookIN home"><Logo /><span className="text-lg font-bold tracking-tight">Book<span className="text-accent-text">IN</span></span></a>
+          <a href="/" className="inline-flex items-center gap-2.5" aria-label="BookIN home"><Image src="/brand/bookin-logo.png" alt="" width={44} height={44} className="h-11 w-11 rounded-xl object-contain" /><span className="text-lg font-bold tracking-tight">Book<span className="text-accent-text">IN</span></span></a>
           <p className="mt-4 max-w-sm leading-relaxed text-muted">Futsal arena discovery and booking, built for players, teams and the venues that host them.</p>
           <ul className="mt-6 flex gap-2">
             {SOCIAL.map(({ label, Icon }) => (
